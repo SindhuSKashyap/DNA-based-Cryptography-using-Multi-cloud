@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE4F3894-85E4-4DF9-8FE3-EC94B8EEEB0B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DNACrytoMultipleCloud</RootNamespace>
+    <AssemblyName>DNACrytoMultipleCloud</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\..\..\..\LIVE PROJECTS\TRIPHASE INVENTORY FINAL\PROJECT\TriphaseInventory\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cloudadminlogin.aspx" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\font-awesome.css" />
+    <Content Include="assets\img\1.png" />
+    <Content Include="assets\img\2.png" />
+    <Content Include="assets\img\3.png" />
+    <Content Include="assets\img\4.png" />
+    <Content Include="assets\img\find_user.png" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\dataTables\dataTables.bootstrap.css" />
+    <Content Include="assets\js\dataTables\dataTables.bootstrap.js" />
+    <Content Include="assets\js\dataTables\jquery.dataTables.js" />
+    <Content Include="assets\js\jquery-1.10.2.js" />
+    <Content Include="assets\js\jquery.metisMenu.js" />
+    <Content Include="assets\js\morris\morris-0.4.3.min.css" />
+    <Content Include="assets\js\morris\morris.js" />
+    <Content Include="assets\js\morris\raphael-2.1.0.min.js" />
+    <Content Include="chart.html" />
+    <Content Include="css\component.css" />
+    <Content Include="css\demo.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\style.css" />
+    <Content Include="DownloadData.aspx" />
+    <Content Include="fonts1\codropsicons\license.txt" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="home\css\slider.css" />
+    <Content Include="home\css\style.css" />
+    <Content Include="home\images\arrow_up.png" />
+    <Content Include="home\images\bg.jpg" />
+    <Content Include="home\images\bg1.jpg" />
+    <Content Include="home\images\c1.png" />
+    <Content Include="home\images\c2.png" />
+    <Content Include="home\images\c3.png" />
+    <Content Include="home\images\c4.png" />
+    <Content Include="home\images\client1.jpg" />
+    <Content Include="home\images\client2.jpg" />
+    <Content Include="home\images\coma.png" />
+    <Content Include="home\images\dot.png" />
+    <Content Include="home\images\icon-fb.png" />
+    <Content Include="home\images\icon-gp.png" />
+    <Content Include="home\images\icon-mail.png" />
+    <Content Include="home\images\icon-mb.png" />
+    <Content Include="home\images\icon-p.png" />
+    <Content Include="home\images\icon-tw.png" />
+    <Content Include="home\images\icons.png" />
+    <Content Include="home\images\img-left.png" />
+    <Content Include="home\images\img-right.png" />
+    <Content Include="home\images\logo.jpg" />
+    <Content Include="home\images\logo.png" />
+    <Content Include="home\images\menu-icon.png" />
+    <Content Include="home\images\mobile-icoon1.png" />
+    <Content Include="home\images\nav-icon.png" />
+    <Content Include="home\images\pic1.png" />
+    <Content Include="home\images\pic2.png" />
+    <Content Include="home\images\pic3.png" />
+    <Content Include="home\images\pic4.png" />
+    <Content Include="home\images\pic5.png" />
+    <Content Include="home\images\pic6.png" />
+    <Content Include="home\images\soc_icons.png" />
+    <Content Include="home\images\speak-box.png" />
+    <Content Include="home\images\speak-box2.png" />
+    <Content Include="home\images\sprite.png" />
+    <Content Include="home\images\team-member1.png" />
+    <Content Include="home\images\team-member2.jpg" />
+    <Content Include="home\images\team-member3.jpg" />
+    <Content Include="home\images\top-social-icons.png" />
+    <Content Include="home\images\Untitled-2 copy.png" />
+    <Content Include="home\index.aspx" />
+    <Content Include="home\js\easing.js" />
+    <Content Include="home\js\jquery.cslider.js" />
+    <Content Include="home\js\jquery.easing.1.3.js" />
+    <Content Include="home\js\jquery.flexisel.js" />
+    <Content Include="home\js\jquery.min.js" />
+    <Content Include="home\js\menu.js" />
+    <Content Include="home\js\modernizr.custom.28468.js" />
+    <Content Include="home\js\move-top.js" />
+    <Content Include="hovercss\css\demo-page.css" />
+    <Content Include="hovercss\css\hover-min.css" />
+    <Content Include="hovercss\css\hover.css" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bgf.png" />
+    <Content Include="images\Holidays_tour_packages.jpg" />
+    <Content Include="images\icons.png" />
+    <Content Include="js\classie.js" />
+    <Content Include="js\modernizr.custom.js" />
+    <Content Include="js\uiProgressButton.js" />
+    <Content Include="login.aspx" />
+    <Content Include="MasterCloud.aspx" />
+    <Content Include="NewPassword.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="RegistrationUserDetails.aspx" />
+    <Content Include="UploadData.aspx" />
+    <Content Include="VerificationCode.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cloudadminlogin.aspx.cs">
+      <DependentUpon>cloudadminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cloudadminlogin.aspx.designer.cs">
+      <DependentUpon>cloudadminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DNA.cs" />
+    <Compile Include="DownloadData.aspx.cs">
+      <DependentUpon>DownloadData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownloadData.aspx.designer.cs">
+      <DependentUpon>DownloadData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterCloud.aspx.cs">
+      <DependentUpon>MasterCloud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterCloud.aspx.designer.cs">
+      <DependentUpon>MasterCloud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPageCloudAdmin.Master.cs">
+      <DependentUpon>MasterPageCloudAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPageCloudAdmin.Master.designer.cs">
+      <DependentUpon>MasterPageCloudAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPageMain.Master.cs">
+      <DependentUpon>MasterPageMain.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPageMain.Master.designer.cs">
+      <DependentUpon>MasterPageMain.Master</DependentUpon>
+    </Compile>
+    <Compile Include="NewPassword.aspx.cs">
+      <DependentUpon>NewPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewPassword.aspx.designer.cs">
+      <DependentUpon>NewPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationUserDetails.aspx.cs">
+      <DependentUpon>RegistrationUserDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrationUserDetails.aspx.designer.cs">
+      <DependentUpon>RegistrationUserDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadData.aspx.cs">
+      <DependentUpon>UploadData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadData.aspx.designer.cs">
+      <DependentUpon>UploadData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerificationCode.aspx.cs">
+      <DependentUpon>VerificationCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerificationCode.aspx.designer.cs">
+      <DependentUpon>VerificationCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="MasterPageCloudAdmin.Master" />
+    <Content Include="images\Thumbs.db" />
+    <Content Include="MasterPageMain.Master" />
+    <Content Include="fonts1\codropsicons\codropsicons.eot" />
+    <Content Include="fonts1\codropsicons\codropsicons.svg" />
+    <Content Include="fonts1\codropsicons\codropsicons.ttf" />
+    <Content Include="fonts1\codropsicons\codropsicons.woff" />
+    <Content Include="js\.DS_Store" />
+    <Content Include="home\images\icon-p.psd" />
+    <Content Include="home\images\Thumbs.db" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DNA_DataAccessLayer\DNA_DataAccessLayer.csproj">
+      <Project>{9c88ec8a-cd7f-4950-9165-ec6ab776e6b6}</Project>
+      <Name>DNA_DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DNA_TransportLayer\DNA_TransportLayer.csproj">
+      <Project>{7643c6e2-1119-48a8-8616-5a0d81cb63e5}</Project>
+      <Name>DNA_TransportLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2926/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

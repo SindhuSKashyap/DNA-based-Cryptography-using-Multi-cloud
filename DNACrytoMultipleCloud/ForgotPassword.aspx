@@ -1,0 +1,61 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ForgotPassword.aspx.cs" Inherits="DNACrytoMultipleCloud.ForgotPassword" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Forgot Password</title>
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--webfonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div class="login-form" style="margin: 0 auto 1%;">
+        <h1>Enter the Registered Email Address</h1>
+        <h2><a href="login.aspx">Sign In</a></h2>
+        <form id="form1" runat="server">
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <li>
+                <asp:TextBox ID="TxtUserName" CssClass="form-control" runat="server" Width="290px"></asp:TextBox>
+                <asp:TextBoxWatermarkExtender ID="TxtWatermarkExtender" WatermarkText="Email Id" runat="server" TargetControlID="TxtUserName"></asp:TextBoxWatermarkExtender>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TxtUserName" ValidationGroup="1" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+                <span class=" icon user"></span>
+            </li>
+            <li>
+                <%--   <h3><a href="#">Forgot Password?</a></h3>--%>
+                <%--<input type="submit" onclick="myFunction()" value="Sign In" />--%>
+                <asp:Button ID="BtnSubmit" runat="server" Text="Submit" OnClick="BtnSubmit_Click" ValidationGroup="1" />
+                <asp:Label ID="lblres" runat="server" ForeColor="Red"></asp:Label>
+                <asp:HiddenField ID="HiddenEmailCode" runat="server" />
+                <a href="#" class=" icon arrow"></a>
+            </li>
+
+            <%--   <li>
+                <asp:TextBox ID="TxtVerificationCode" CssClass="form-control" runat="server" Width="290px" Visible="false"></asp:TextBox>
+            </li>
+           <li>
+                <%--   <h3><a href="#">Forgot Password?</a></h3>--%>
+            <%--<input type="submit" onclick="myFunction()" value="Sign In" />--%>
+            <%--<asp:Button ID="BtnVerify" runat="server" Text="Verify" ValidationGroup="1" OnClick="BtnVerify_Click" Visible="false"/>--%>
+            <%--  </li>--%>
+
+           <%-- <li>--%>
+                <%--    <asp:TextBox ID="TxtNewPassword" CssClass="form-control" runat="server" Width="290px" Visible="false"></asp:TextBox>
+            </li>
+             <li>
+                <asp:TextBox ID="TxtConfirmPassword" CssClass="form-control" runat="server" Width="290px" Visible="false"></asp:TextBox>
+            </li>--%>
+
+                <%-- <div class="forgot">--%>
+                <%--   <h3><a href="#">Forgot Password?</a></h3>--%>
+                <%--<input type="submit" onclick="myFunction()" value="Sign In" />--%>
+                <%--    <asp:Button ID="btnSubmit1" runat="server" Text="Reset" ValidationGroup="1" OnClick="btnSubmit1_Click" Visible="false"/>
+            </div>--%>
+        </form>
+    </div>
+
+</body>
+</html>
